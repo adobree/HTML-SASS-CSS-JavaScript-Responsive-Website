@@ -14,4 +14,38 @@ const closeNav = () => {
     closeNavBtn.style.display = 'none';
 }
 
-closeNavBtn.addEventListener('click', closeNav)
+closeNavBtn.addEventListener('click', closeNav);
+
+/* close nav */
+if(window.innerWidth < 1024) {
+    document.querySelectorAll('#nav__items li a').forEach(navItem => {
+        navItem.addEventListener('click', () => {
+            closeNav();
+        })
+    })
+}
+
+/* navbar style on scroll */
+
+
+// TESTIMONIALS //
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    // Responsive Breakpoinst
+    breakpoints: {
+        // Medium Size
+        1024: {
+            slidesPerView: 3
+        },
+        // Small Size
+        600: {
+            slidesPerView: 2
+        }
+    }
+  });
