@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.container {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+  align-items: center;
+}
+
+.title {
+  background: linear-gradient(135deg, #480ca8, #4cc9f0);
+  color: #fff;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  /* Select the top half (or left half) or scrollbar track individually */
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  /* Select the thumb when the browser window isn't in focus */
+}
+::-webkit-scrollbar-button:horizontal:decrement:hover {
+  /* Select the down or left scroll button when it's being hovered by the mouse */
+}
+
+
+::-webkit-scrollbar {
+   width: 12px;
+}
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); 
+   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); 
+}
