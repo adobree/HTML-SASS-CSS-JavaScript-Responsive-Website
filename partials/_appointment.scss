@@ -36,6 +36,10 @@
       flex-direction: column;
       gap: 1.4rem;
 
+      .form__group-aszf {
+        font-size: 0.8rem;
+      }
+
       .form__group {
         .form__control {
           background: $white-color;

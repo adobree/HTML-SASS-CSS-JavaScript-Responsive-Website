@@ -125,49 +125,50 @@
                     <small>Kurva okos</small>
                 </div>
                 <div class="specialist__socials">
-                    <a href="mailto:valami@helo.hu" target="_blank"><i class='bx bxs-envelope' ></i></a>
+                    <a href="#div1" title="Adatlap"><i class='bx bxs-book-content'></i></a>
                 </div>
-                <a href="#" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="mailto:valami@helo.hu" class="specialist__bigicon" title="Email: valami@vince.hu"><i class='bx bxs-envelope' ></i></a>
             </article>
             <article>
                 <div class="specialist__image">
-                    <img src="./assets/specialist1.jpg" alt="">
+                    <img src="./assets/specialist2.jpg" alt="">
                 </div>
                 <div class="specialist__details">
-                    <h4>Rak Vince</h4>
+                    <h4>Masodik Janos</h4>
                     <small>Kurva okos</small>
                 </div>
                 <div class="specialist__socials">
-                    <a href="mailto:valami@helo.hu" target="_blank"><i class='bx bxs-envelope' ></i></a>
+                    <a href="#div2" title="Adatlap"><i class='bx bxs-book-content'></i></a>
                 </div>
-                <a href="#" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="mailto:valami@helo.hu" class="specialist__bigicon" title="Email: valami@vince.hu"><i class='bx bxs-envelope' ></i></a>
             </article>
             <article>
                 <div class="specialist__image">
-                    <img src="./assets/specialist1.jpg" alt="">
+                    <img src="./assets/specialist3.jpg" alt="">
                 </div>
                 <div class="specialist__details">
-                    <h4>Rak Vince</h4>
+                    <h4>Harmadik Peter</h4>
                     <small>Kurva okos</small>
                 </div>
                 <div class="specialist__socials">
-                    <a href="mailto:valami@helo.hu" target="_blank"><i class='bx bxs-envelope' ></i></a>
+                    <a href="#div3" title="Adatlap"><i class='bx bxs-book-content'></i></a>
                 </div>
-                <a href="#" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="mailto:valami@helo.hu" class="specialist__bigicon" title="Email: valami@vince.hu"><i class='bx bxs-envelope' ></i></a>
             </article>
             <article>
                 <div class="specialist__image">
-                    <img src="./assets/specialist1.jpg" alt="">
+                    <img src="./assets/specialist4.jpg" alt="">
                 </div>
                 <div class="specialist__details">
-                    <h4>Rak Vince</h4>
+                    <h4>Negyedik Mari</h4>
                     <small>Kurva okos</small>
                 </div>
                 <div class="specialist__socials">
-                    <a href="mailto:valami@helo.hu" target="_blank"><i class='bx bxs-envelope' ></i></a>
+                    <a href="#div4" title="Adatlap"><i class='bx bxs-book-content'></i></a>
                 </div>
-                <a href="#" class="specialist__whatsapp" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="mailto:valami@helo.hu" class="specialist__bigicon" title="Email: valami@vince.hu"><i class='bx bxs-envelope' ></i></a>
             </article>
+
         </div>
         
     </section>
@@ -318,16 +319,21 @@
         <!-- FORM -->
         <form class="form" action="contact.php" method="post">
             <div class="form__group">
-                <input class="form__control" type="text" placeholder="Teljes név" name="name" id="name">
+                <input class="form__control" type="text" placeholder="Teljes név" name="name" id="name" required>
             </div>
             <div class="form__group">
-                <input class="form__control" type="email" placeholder="E-mail cím" name="email" id="email">
+                <input class="form__control" type="email" placeholder="E-mail cím" name="email" id="email" required>
             </div>
             <div class="form__group">
-                <input class="form__control" type="text" placeholder="Telefonszám" name="mobile" id="mobile">
+                <input class="form__control" type="text" placeholder="Telefonszám" name="mobile" id="mobile" required>
             </div>
             <div class="form__group">
-                <textarea class="form__control" rows="10" name="message" placeholder="Üzenet" id="message"></textarea>
+                <textarea class="form__control" rows="10" name="message" placeholder="Üzenet" id="message" minlength="10"></textarea>
+            </div>
+            <div class="form__group-aszf">
+                <input type="checkbox" required>
+                <label for="vehicle1"> Elolvastam és megértettem az 
+                    <a href="aszf.html">ÁSZF</a>-t.</label><br>
             </div>
             <div class="form__group">
                 <p>
@@ -373,7 +379,8 @@
                 <p>Facebook</p>
                 <p>Instagram</p>
                 <div class="footer__socials">
-                    <!-- icons -->
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-instagram-alt' ></i>
                 </div>
             </article>
         </div>
@@ -382,6 +389,109 @@
         </div>
     </footer>
 <!-- ========================= END OF FOOTER ========================= -->
+<section id="popup">
+    <div class="overlay" id="div1">
+        <div class="wrapper">
+            <h2>Rak Vince</h2>
+            <a href="#specialists" class="close">&times;</a>
+            <div class="content">
+                <div class="address">
+                    <p>
+                        <i class='bx bxs-envelope' ></i>
+                        <small>
+                            <a href="mailto:vince@vince.hu">vince@vince.hu</a>
+                        </small>
+                    </p>
+                    <p>
+                        <i class='bx bxs-phone-call' ></i>
+                        <small>+36 30 300 3030</small>
+                    </p>
+                </div>
+                <div class="container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut esse sunt praesentium corrupti dolor hic aut sint magnam corporis numquam asperiores consequuntur nobis eum neque, sit veritatis ullam? Expedita illo nemo perferendis excepturi numquam laborum officiis qui aperiam. Molestias incidunt magnam cumque earum cupiditate autem, sequi animi! Ab et animi veritatis dolore ducimus accusantium eius tempora, minus quae est quia voluptatem ut quod debitis. Mollitia distinctio, modi ipsum atque optio voluptates iure temporibus quae laudantium, consectetur pariatur dolores labore, earum quis ad odit nulla totam voluptate nisi impedit reprehenderit illo sequi. Vero non, hic dolores perferendis rerum consequatur ullam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="div2">
+        <div class="wrapper">
+            <h2>Masodik Janos</h2>
+            <a href="#specialists" class="close">&times;</a>
+            <div class="content">
+                <div class="address">
+                    <p>
+                        <i class='bx bxs-envelope' ></i>
+                        <small>
+                            <a href="mailto:vince@vince.hu">vince@vince.hu</a>
+                        </small>
+                    </p>
+                    <p>
+                        <i class='bx bxs-phone-call' ></i>
+                        <small>+36 30 300 3030</small>
+                    </p>
+                </div>
+                <div class="container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut esse sunt praesentium corrupti dolor hic aut sint magnam corporis numquam asperiores consequuntur nobis eum neque, sit veritatis ullam? Expedita illo nemo perferendis excepturi numquam laborum officiis qui aperiam. Molestias incidunt magnam cumque earum cupiditate autem, sequi animi! Ab et animi veritatis dolore ducimus accusantium eius tempora, minus quae est quia voluptatem ut quod debitis. Mollitia distinctio, modi ipsum atque optio voluptates iure temporibus quae laudantium, consectetur pariatur dolores labore, earum quis ad odit nulla totam voluptate nisi impedit reprehenderit illo sequi. Vero non, hic dolores perferendis rerum consequatur ullam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="div3">
+        <div class="wrapper">
+            <h2>Harmadik Peter</h2>
+            <a href="#specialists" class="close">&times;</a>
+            <div class="content">
+                <div class="address">
+                    <p>
+                        <i class='bx bxs-envelope' ></i>
+                        <small>
+                            <a href="mailto:vince@vince.hu">vince@vince.hu</a>
+                        </small>
+                    </p>
+                    <p>
+                        <i class='bx bxs-phone-call' ></i>
+                        <small>+36 30 300 3030</small>
+                    </p>
+                </div>
+                <div class="container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut esse sunt praesentium corrupti dolor hic aut sint magnam corporis numquam asperiores consequuntur nobis eum neque, sit veritatis ullam? Expedita illo nemo perferendis excepturi numquam laborum officiis qui aperiam. Molestias incidunt magnam cumque earum cupiditate autem, sequi animi! Ab et animi veritatis dolore ducimus accusantium eius tempora, minus quae est quia voluptatem ut quod debitis. Mollitia distinctio, modi ipsum atque optio voluptates iure temporibus quae laudantium, consectetur pariatur dolores labore, earum quis ad odit nulla totam voluptate nisi impedit reprehenderit illo sequi. Vero non, hic dolores perferendis rerum consequatur ullam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="div4">
+        <div class="wrapper">
+            <h2>Negyedik Mari</h2>
+            <a href="#specialists" class="close">&times;</a>
+            <div class="content">
+                <div class="address">
+                    <p>
+                        <i class='bx bxs-envelope' ></i>
+                        <small>
+                            <a href="mailto:vince@vince.hu">vince@vince.hu</a>
+                        </small>
+                    </p>
+                    <p>
+                        <i class='bx bxs-phone-call' ></i>
+                        <small>+36 30 300 3030</small>
+                    </p>
+                </div>
+                <div class="container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut esse sunt praesentium corrupti dolor hic aut sint magnam corporis numquam asperiores consequuntur nobis eum neque, sit veritatis ullam? Expedita illo nemo perferendis excepturi numquam laborum officiis qui aperiam. Molestias incidunt magnam cumque earum cupiditate autem, sequi animi! Ab et animi veritatis dolore ducimus accusantium eius tempora, minus quae est quia voluptatem ut quod debitis. Mollitia distinctio, modi ipsum atque optio voluptates iure temporibus quae laudantium, consectetur pariatur dolores labore, earum quis ad odit nulla totam voluptate nisi impedit reprehenderit illo sequi. Vero non, hic dolores perferendis rerum consequatur ullam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================= END OF POPUP ========================= -->
     
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

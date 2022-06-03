@@ -26,7 +26,7 @@
           visibility: visible;
         }
 
-        .specialist__whatsapp {
+        .specialist__bigicon {
           opacity: 1;
           visibility: visible;
         }
@@ -83,14 +83,14 @@
           &:hover {
             background: $primary-color;
             color: $white-color;
-
           }
         }
       }
 
-      .specialist__whatsapp {
-        background: $success-color;
-        color: $white-color;
+      .specialist__bigicon {
+        background: $white-color;
+        color: $primary-color;
+        font-size: 1.5rem;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
