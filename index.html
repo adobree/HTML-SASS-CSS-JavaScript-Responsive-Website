@@ -11,6 +11,11 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--===================FLEX SLIDER=======================-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <!--==============CONTACT FORM=================-->
+    <script src="js/contact_form.js"></script>
 </head>
 <body>
     <nav>
@@ -324,7 +329,7 @@
             </article>
         </div>
         <!-- FORM -->
-        <form class="form" action="contact.php" method="post">
+        <form class="form" id="phpcontactform">
             <div class="form__group">
                 <input class="form__control" type="text" placeholder="Teljes név" name="name" id="name" required>
             </div>
@@ -346,6 +351,7 @@
                 <p>
                     <input class="btn-primary" type="submit" value="Üzenet küldése" />
                 </p>
+                <span class="loading"></span>
             </div>
         </form>
     </div>

@@ -2,34 +2,25 @@
 $name  = $_REQUEST["name"];
 $email = $_REQUEST["email"];
 $mobile   = $_REQUEST["mobile"];
-$message   = $_REQUEST["message"];
+$msg   = $_REQUEST["msg"];
 $to    = "kovacs.adam@itexpress.hu"; /*Replace your email id here*/
-if (isset($email) && isset($name) && isset($message)) {
+if (isset($email) && isset($name) && isset($msg)) {
     $subject = "$name - MEGKERESÉS";
 		$headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 $headers .= "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n" ;
-$message     = "From: $name<br/> Email: $email <br/> Mobile: $mobile <br/>Message: $message";
+$msg     = "From: $name<br/> Email: $email <br/> Mobile: $mobile <br/>Message: $msg";
 	
-   $mail =  mail($to, $subject, $message, $headers);
-	 if($mail)
-	 {
-		 echo '
-		 <html>
-		 <head>
-			 <meta http-equiv="refresh" content="0;url=sent.html" />
-		 </head>
-		 <body>
- 
-		 </body>	
-			 </html>
-		 ';
-	 }
- 
- else
-	 {
-		 echo 'Sikertelen elküldés :(';
-	 }
- }
- 
- ?>
+   $mail =  mail($to, $subject, $msg, $headers);
+  if($mail)
+	{
+		echo 'success';
+	}
+
+else
+	{
+		echo 'failed';
+	}
+}
+
+?>
